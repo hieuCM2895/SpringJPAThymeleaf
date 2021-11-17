@@ -29,5 +29,12 @@ public class UserDTO {
     @Pattern(regexp="(^$|[0-9]{10})")
     private String phone;
 
+    @NotNull
     private String address;
+
+    @NotNull
+    private String city;
+
+    @NotNull
+    private String postalCode;
 }
