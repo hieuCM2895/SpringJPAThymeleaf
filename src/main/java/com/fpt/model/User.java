@@ -30,17 +30,8 @@ public class User {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "city")
-    private String city;
-
-    @Column(name = "country")
-    private String country;
-
     @Column(name = "phone")
     private String phone;
-
-    @Column(name = "postal_code")
-    private String postalCode;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
@@ -49,7 +40,6 @@ public class User {
                     name = "user_id", referencedColumnName = "user_id"),
             inverseJoinColumns = @JoinColumn(
                     name = "role_id", referencedColumnName = "role_id"))
-
     private Collection<Role> roles;
 
 }

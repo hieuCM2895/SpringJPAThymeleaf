@@ -32,9 +32,4 @@ public class UserDTO {
     @NotNull
     private String address;
 
-    @NotNull
-    private String city;
-
-    @NotNull
-    private String postalCode;
 }
