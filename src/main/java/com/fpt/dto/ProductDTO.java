@@ -1,13 +1,12 @@
 package com.fpt.dto;
 
-import com.fpt.model.Category;
 import com.fpt.model.Product;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import javax.validation.constraints.NotNull;
+import org.springframework.stereotype.Component;
 
 @Data
+@Component
 public class ProductDTO {
 
     private int id;

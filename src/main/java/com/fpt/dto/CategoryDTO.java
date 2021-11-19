@@ -3,12 +3,13 @@ package com.fpt.dto;
 import com.fpt.model.Category;
 import com.fpt.model.Product;
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
 import java.util.Set;
 
-
 @Data
+@Component
 public class CategoryDTO {
 
     private int id;
