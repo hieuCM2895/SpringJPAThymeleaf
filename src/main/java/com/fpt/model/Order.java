@@ -22,7 +22,7 @@ public class Order implements Serializable {
     private User user;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<OrderItem> listOfOrderItems;
+    private Set<OrderItems> listOfOrderItems;
 
     @Column(name = "order_date")
     @Temporal(TemporalType.TIMESTAMP)
